@@ -10,6 +10,7 @@ public class App
     {
         System.out.println( "Hello World!" );
         System.out.println("zmiany do nowego brancha");
+        System.out.println("dalsze testowanie celem nauki gita poprzez git hub desktop");
     }
 
 }
