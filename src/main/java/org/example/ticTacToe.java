@@ -133,7 +133,7 @@ public class ticTacToe {
 
     private String checkWhoIsWinner() {
         String winnersGamePawn;
-        String stringToReturn = "-";
+        String result = "-";
         if ((gameBoard[0][0].equals(gameBoard[0][1]) && gameBoard[0][1].equals(gameBoard[0][2]))) {
             winnersGamePawn = gameBoard[0][0];
         } else if (gameBoard[1][0].equals(gameBoard[1][1]) && gameBoard[1][1].equals(gameBoard[1][2])) {
@@ -155,13 +155,13 @@ public class ticTacToe {
         }
 
         if (winnersGamePawn.equals(player1.getGamePawn())) {
-            stringToReturn = player1.getNickName();
+            result = player1.getNickName();
         } else if (winnersGamePawn.equals(" ")) {
-            stringToReturn = "REMIS!";
+            result = "REMIS!";
         } else if (winnersGamePawn.equals(player2.getGamePawn())) {
-            stringToReturn = player2.getNickName();
+            result = player2.getNickName();
         }
-        return stringToReturn;
+        return result;
     }
 
 
